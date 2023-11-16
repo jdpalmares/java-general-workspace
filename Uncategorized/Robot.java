@@ -49,5 +49,9 @@ class Main {
                 rob.turnLeft();
             }
         }
+        //can only use the x-y coordinate if we assume that robot always begins at a certain point
+        //(e.g. {0,0} and then the first move will always be a longitudinal increase to {0,1})
+        //but since that is not mentioned in the problem it and the robot can start anywhere in the
+        //maze with its first move direction unknown, we use the hashcode of the robot object
     }
 }
