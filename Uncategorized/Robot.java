@@ -41,9 +41,8 @@ class Main {
         while (!rob.hasExited()) {
             String currentPosition = "Pos" + System.identityHashCode(rob);
             if (visited.contains(currentPosition)) {
-                rob.turnLeft(); // If visited, turn left
+                rob.turnLeft();
             } else if (rob.isPathClear()) {
-                // Move forward, mark the square as visited, and record the movement
                 rob.moveForward();
                 visited.add(currentPosition);
             } else {
